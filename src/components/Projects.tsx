@@ -41,7 +41,7 @@ const projects: Project[] = [
     name: "Pokémon Adventure",
     subtitle: "JavaScript (ES6) · Bootstrap · PokéAPI · Vercel",
     desc: "Interactive Pokémon explorer powered by the PokéAPI. Features detailed stats, abilities, evolutionary paths, and a turn-based battle simulator — all rendered dynamically from a live API.",
-    img: "/assets/project_screens/pokemon.png",
+    img: "/assets/project_screens/pokemon.jpg",
     live: "https://pokemonadventure.vercel.app",
     github: "https://github.com/kseniiaross/Pokemon-Adventure.git",
     flip: true,
