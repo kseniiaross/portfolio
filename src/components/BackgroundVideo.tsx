@@ -7,9 +7,24 @@ export default function BackgroundVideo() {
   useEffect(() => {
     const v = videoRef.current;
     if (!v) return;
+
+    v.muted = true;
+    v.setAttribute("playsinline", "");
+    v.setAttribute("webkit-playsinline", "");
+
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduced) v.pause();
-    else v.play().catch(() => {});
+    if (reduced) {
+      v.pause();
+      return;
+    }
+
+    const tryPlay = () => {
+      v.play().catch(() => {
+        setTimeout(tryPlay, 500);
+      });
+    };
+
+    tryPlay();
   }, []);
 
   return (
