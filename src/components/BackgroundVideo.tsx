@@ -26,7 +26,6 @@ export default function BackgroundVideo() {
         <source src="/assets/background.webm" type="video/webm" />
         <source src="/assets/background.mp4" type="video/mp4" />
       </video>
-      <div className="bg-video-overlay" />
     </div>
   );
 }
