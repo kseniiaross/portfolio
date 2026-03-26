@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import "./BackgroundVideo.css";
+import "../styles/BackgroundVideo.css";
 
 export default function BackgroundVideo() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
