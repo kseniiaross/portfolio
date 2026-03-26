@@ -221,7 +221,6 @@
   font-style: italic;
 }
 
-/* ── MOBILE ── */
 @media (max-width: 768px) {
   .resume-section {
     padding: 3rem 1.25rem;

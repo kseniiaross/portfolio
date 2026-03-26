@@ -11,13 +11,7 @@
   object-fit: cover;
 }
 
-.bg-video-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(7, 4, 15, 0.55);
-}
 
-/* В BackgroundVideo.css */
 @media (max-width: 768px) {
   .bg-video {
     display: none;

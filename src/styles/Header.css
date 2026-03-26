@@ -242,10 +242,7 @@
   text-transform: uppercase;
 }
 
-/* ── MOBILE ── */
 @media (max-width: 768px) {
-
-  /* Навбар */
   .hero__nav {
     padding: 0.9rem 1rem;
   }
@@ -259,7 +256,6 @@
     letter-spacing: 0.04em;
   }
 
-  /* Hero */
   .hero__content {
     flex-direction: column;
     gap: 2rem;
@@ -281,7 +277,6 @@
     padding: 5rem 1.5rem 2rem;
   }
 
-  /* About */
   .about {
     padding: 2rem 1.5rem 4rem;
   }
