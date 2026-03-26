@@ -3,15 +3,15 @@
   z-index: 1;
   padding: 5rem 2rem;
   min-height: 100vh;
-  width: 100%;                
+  width: 100%;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
-  scroll-margin-top: 60px;  
-  display: flex;              
-  flex-direction: column;     
-  align-items: center;     
-  justify-content: center;   
+  scroll-margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .resume-title {
@@ -95,7 +95,7 @@
 }
 
 .doc-card {
-  background: rgba(255, 255, 255, 0.06);  
+  background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(168, 85, 247, 0.3);
   border-radius: 14px;
   padding: 1.5rem 2rem;
@@ -105,6 +105,7 @@
   gap: 1rem;
   margin-bottom: 1rem;
   text-align: center;
+  width: 100%;
 }
 
 .doc-info {
@@ -126,8 +127,9 @@
 
 .doc-btns {
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  gap: 0.75rem;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .resume-btn {
@@ -143,6 +145,7 @@
   background: #a855f7;
   color: #fff;
   border: 1px solid #a855f7;
+  white-space: nowrap;
 }
 
 .resume-btn:hover {
@@ -170,7 +173,7 @@
 }
 
 .rec-card {
-  background: rgba(255, 255, 255, 0.06);  
+  background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(168, 85, 247, 0.25);
   border-radius: 14px;
   padding: 2rem;
@@ -210,4 +213,28 @@
   color: #666;
   margin: 0;
   font-style: italic;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .resume-section {
+    padding: 3rem 1.25rem;
+  }
+
+  .doc-btns {
+    gap: 0.5rem;
+  }
+
+  .resume-btn {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .rec-grid {
+    gap: 1.25rem;
+  }
+
+  .rec-card {
+    padding: 1.5rem 1rem;
+  }
 }

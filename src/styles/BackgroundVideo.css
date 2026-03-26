@@ -16,3 +16,14 @@
   inset: 0;
   background: rgba(7, 4, 15, 0.55);
 }
+
+/* В BackgroundVideo.css */
+@media (max-width: 768px) {
+  .bg-video {
+    display: none;
+  }
+
+  .bg-video-wrapper {
+    background: linear-gradient(135deg, #07040f 0%, #1a0533 50%, #07040f 100%);
+  }
+}
