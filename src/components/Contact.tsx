@@ -64,7 +64,7 @@ export default function Contact() {
           rel="noreferrer"
         >
           <div className="contact-icon">
-            <img src="/assets/icons/wellfound.png" alt="Wellfound" />
+            <img src="/assets/icons/wellfound.svg" alt="Wellfound" />
           </div>
           <div className="contact-info">
             <p className="contact-label">Wellfound</p>
