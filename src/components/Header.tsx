@@ -108,7 +108,7 @@ export default function Header() {
                 aria-label="Wellfound"
                 title="Wellfound"
               >
-                <img src="/assets/icons/wellfound.png" alt="Wellfound" />
+                <img src="/assets/icons/wellfound.svg" alt="Wellfound" />
               </a>
 
             </div>
