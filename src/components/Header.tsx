@@ -99,6 +99,18 @@ export default function Header() {
               >
                 <img src="/assets/icons/gmail.png" alt="Email" />
               </a>
+
+              <a
+                href="https://wellfound.com/u/kseniia-rostovskaia-1"
+                className="hero__icon"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Wellfound"
+                title="Wellfound"
+              >
+                <img src="/assets/icons/wellfound.png" alt="Wellfound" />
+              </a>
+
             </div>
           </div>
 
