@@ -57,6 +57,22 @@ export default function Contact() {
           </div>
         </a>
 
+        <a
+          href="https://wellfound.com/u/kseniia-rostovskaia-1"
+          className="contact-card"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="contact-icon">
+            <img src="/assets/icons/wellfound.png" alt="Wellfound" />
+          </div>
+          <div className="contact-info">
+            <p className="contact-label">Wellfound</p>
+            <p className="contact-value">Ksenii Rostovskaia</p>
+          </div>
+        </a>
+
+
       </div>
     </section>
   );
