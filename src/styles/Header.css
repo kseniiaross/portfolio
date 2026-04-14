@@ -292,4 +292,8 @@
   .about__text {
     font-size: 1rem;
   }
+
+  .hero__socials {
+    justify-content: center;
+  }
 }

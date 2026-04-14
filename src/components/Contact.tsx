@@ -68,7 +68,7 @@ export default function Contact() {
           </div>
           <div className="contact-info">
             <p className="contact-label">Wellfound</p>
-            <p className="contact-value">Ksenii Rostovskaia</p>
+            <p className="contact-value">Kseniia Rostovskaia</p>
           </div>
         </a>
 
