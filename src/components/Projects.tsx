@@ -14,16 +14,20 @@ type Project = {
 const projects: Project[] = [
   {
     name: "KFursenko Candles",
-    subtitle: "React (TypeScript) · Redux Toolkit · Python (Django) · PostgreSQL · WCAG 2.1",
-    desc: "Real-world candle e-commerce platform with secure checkout, scalable order APIs, and an AI Sales Assistant for personalized product discovery. Built with WCAG 2.1 / Section 508 compliance, responsive design, and a polished customer journey from discovery to checkout.",
+    subtitle:
+      "React (TypeScript) · Redux Toolkit · Python (Django) · PostgreSQL · WCAG 2.1",
+    desc:
+      "Real-world candle e-commerce platform featuring AI Search and an AI Sales Assistant for personalized product discovery. Built with secure checkout, scalable order APIs, and WCAG 2.1 / Section 508 accessibility. Achieved Lighthouse scores of 100 in performance and accessibility, delivering a fast, inclusive, and production-ready user experience.",
     img: "/assets/project_screens/kfursenko_demo_portfolio.mp4",
     live: "https://www.kfcandle.com",
     flip: false,
   },
   {
     name: "TRESSE Online Store",
-    subtitle: "React (TypeScript) · Redux Toolkit · Python (Django) · PostgreSQL · WCAG 2.1",
-    desc: "A full-stack knitwear store built for real-world use — featuring secure checkout, scalable order APIs, and a carefully crafted minimalist interface. Built with WCAG 2.1 / Section 508 compliance, clean architecture, and an intuitive shopping experience from browsing to checkout.",
+    subtitle:
+      "React (TypeScript) · Redux Toolkit · Python (Django) · PostgreSQL · WCAG 2.1",
+    desc:
+      "A full-stack knitwear store built for real-world use — featuring secure checkout, scalable order APIs, and a carefully crafted minimalist interface. Built with WCAG 2.1 / Section 508 compliance, clean architecture, and an intuitive shopping experience from browsing to checkout.",
     img: "/assets/project_screens/tresse_demo_portfolio.mp4",
     live: "https://www.tressehandmade.com",
     flip: true,
@@ -31,7 +35,8 @@ const projects: Project[] = [
   {
     name: "Real-Time Chat",
     subtitle: "React (TypeScript) · Flask-SocketIO · WebSockets · REST API",
-    desc: "A modern real-time chat platform built with Flask-SocketIO (backend) and React + TypeScript (frontend). Supports instant messaging, custom rooms, reactions, and a polished animated UI.",
+    desc:
+      "A modern real-time chat platform built with Flask-SocketIO (backend) and React + TypeScript (frontend). Supports instant messaging, custom rooms, reactions, and a polished animated UI.",
     img: "/assets/project_screens/realchat.png",
     live: "https://chat-appsigma.vercel.app",
     github: "https://github.com/kseniiaross/Real-Time-Chat-App.git",
@@ -40,7 +45,8 @@ const projects: Project[] = [
   {
     name: "Pokémon Adventure",
     subtitle: "JavaScript (ES6) · Bootstrap · PokéAPI · Vercel",
-    desc: "Interactive Pokémon explorer powered by the PokéAPI. Features detailed stats, abilities, evolutionary paths, and a turn-based battle simulator — all rendered dynamically from a live API.",
+    desc:
+      "Interactive Pokémon explorer powered by the PokéAPI. Features detailed stats, abilities, evolutionary paths, and a turn-based battle simulator — all rendered dynamically from a live API.",
     img: "/assets/project_screens/pokemon.jpg",
     live: "https://pokemonadventure.vercel.app",
     github: "https://github.com/kseniiaross/Pokemon-Adventure.git",
@@ -57,13 +63,13 @@ export default function Projects() {
 
     const rows = root.querySelectorAll<HTMLElement>(".project-row");
 
-    const io = new IntersectionObserver(
+    const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            (e.target as HTMLElement).classList.add("in");
-            io.unobserve(e.target);
-          }
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          entry.target.classList.add("in");
+          observer.unobserve(entry.target);
         });
       },
       {
@@ -72,9 +78,9 @@ export default function Projects() {
       }
     );
 
-    rows.forEach((r) => io.observe(r));
+    rows.forEach((row) => observer.observe(row));
 
-    return () => io.disconnect();
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -82,40 +88,60 @@ export default function Projects() {
       <section className="projectsFS" id="projects" ref={rootRef}>
         <h2 className="projectsFS-title">Recent Builds</h2>
 
-        {projects.map((p, i) => (
+        {projects.map((project) => (
           <article
-            key={i}
-            className={`project-row${p.flip ? " flip" : ""}`}
+            key={project.name}
+            className={`project-row${project.flip ? " flip" : ""}`}
           >
             <figure className="shot">
-              {p.img.endsWith(".mp4") ? (
+              {project.img.endsWith(".mp4") ? (
                 <video
-                  src={p.img}
+                  src={project.img}
                   autoPlay
                   loop
                   muted
                   playsInline
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  preload="metadata"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
                 />
               ) : (
-                <img src={p.img} alt={`${p.name} screenshot`} />
+                <img
+                  src={project.img}
+                  alt={`${project.name} project preview`}
+                />
               )}
+
               <div className="vignette" />
             </figure>
 
             <div className="copy">
-              <h3 className="name">{p.name}</h3>
-              <p className="subtitle">{p.subtitle}</p>
-              <p className="desc">{p.desc}</p>
+              <h3 className="name">{project.name}</h3>
+              <p className="subtitle">{project.subtitle}</p>
+              <p className="desc">{project.desc}</p>
 
               <div className="copy__btns">
-                {p.live && (
-                  <a href={p.live} className="liveBtn" target="_blank" rel="noreferrer">
+                {project.live && (
+                  <a
+                    href={project.live}
+                    className="liveBtn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Live Link
                   </a>
                 )}
-                {p.github && (
-                  <a href={p.github} className="liveBtn secondary" target="_blank" rel="noreferrer">
+
+                {project.github && (
+                  <a
+                    href={project.github}
+                    className="liveBtn secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     GitHub
                   </a>
                 )}

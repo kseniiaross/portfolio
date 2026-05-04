@@ -133,7 +133,8 @@ export default function Header() {
           <p className="about__text">
             Frontend-focused Full Stack Developer building scalable, accessible, and high-performance web applications with React (TypeScript), Redux Toolkit, Django, and PostgreSQL.
             I specialize in creating responsive, WCAG 2.1 / Section 508–compliant interfaces with a strong focus on performance, usability, and maintainable architecture, including Lighthouse-driven optimization.
-            I design data-driven applications with efficient API integration, optimized state management, and production-ready frontend systems. I’m also actively exploring AI-powered features and modern frontend UX patterns driven by AI integration.
+            I design data-driven applications with efficient API integration and optimized state management, improving application responsiveness and user experience. I’m also actively exploring AI-powered features and modern frontend UX patterns driven by AI integration.
+            With a background in database administration and cross-functional leadership, I bring structured problem-solving, attention to detail, and clear communication to deliver reliable, production-ready solutions that scale.
             With a background in database administration and cross-functional leadership, I bring structured problem-solving, attention to detail, and clear communication to deliver reliable solutions that scale.
           </p>
 
