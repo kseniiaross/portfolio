@@ -131,10 +131,10 @@ export default function Header() {
           <h2 className="about__title about__title--center">About</h2>
 
           <p className="about__text">
-            Front-End–focused Full Stack Developer building scalable, accessible, and high-performance web applications with React (TypeScript), Redux Toolkit, Django, and PostgreSQL. 
-            I specialize in front-end architecture, state management, semantic HTML, and WCAG 2.1 / Section 508–compliant interfaces, ensuring inclusive and maintainable user experiences. 
-            I design clean, data-driven systems with strong API integration, optimized data flow, and performance-focused architecture built for real-world production environments. 
-            With a background in database administration and leadership roles, I bring technical precision, structured problem-solving, and clear cross-functional communication to deliver reliable, production-ready solutions that scale.
+            Frontend-focused Full Stack Developer building scalable, accessible, and high-performance web applications with React (TypeScript), Redux Toolkit, Django, and PostgreSQL.
+            I specialize in creating responsive, WCAG 2.1 / Section 508–compliant interfaces with a strong focus on performance, usability, and maintainable architecture, including Lighthouse-driven optimization.
+            I design data-driven applications with efficient API integration, optimized state management, and production-ready frontend systems. I’m also actively exploring AI-powered features and modern frontend UX patterns driven by AI integration.
+            With a background in database administration and cross-functional leadership, I bring structured problem-solving, attention to detail, and clear communication to deliver reliable solutions that scale.
           </p>
 
           <h3 className="about__subtitle about__subtitle--center">Skills</h3>
