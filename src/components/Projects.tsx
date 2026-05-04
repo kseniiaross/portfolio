@@ -17,7 +17,7 @@ const projects: Project[] = [
     subtitle:
       "React (TypeScript) · Redux Toolkit · Python (Django) · PostgreSQL · WCAG 2.1",
     desc:
-      "Real-world candle e-commerce platform featuring AI Search and an AI Sales Assistant for personalized product discovery. Built with secure checkout, scalable order APIs, and WCAG 2.1 / Section 508 accessibility. Achieved Lighthouse scores of 100 in performance and accessibility, delivering a fast, inclusive, and production-ready user experience.",
+      "Real-world candle e-commerce platform featuring AI-powered search and an AI Sales Assistant for personalized product discovery. Built with secure checkout, scalable order APIs, and WCAG 2.1 / Section 508 accessibility. Achieved Lighthouse scores of 100 in performance and accessibility, delivering a fast, inclusive, and production-ready user experience.",
     img: "/assets/project_screens/kfursenko_demo_portfolio.mp4",
     live: "https://www.kfcandle.com",
     flip: false,
