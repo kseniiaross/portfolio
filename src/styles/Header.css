@@ -130,8 +130,10 @@
   object-fit: cover;
   border-radius: none;
   border: 0;
-  mask-image: radial-gradient(ellipse 85% 90% at 60% 40%, black 40%, transparent 100%);
-  -webkit-mask-image: radial-gradient(ellipse 85% 90% at 60% 40%, black 40%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%), radial-gradient(ellipse 90% 95% at 55% 35%, black 30%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%), radial-gradient(ellipse 90% 95% at 55% 35%, black 30%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in;
   display: block;
 }
 
