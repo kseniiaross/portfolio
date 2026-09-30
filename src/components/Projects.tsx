@@ -28,7 +28,7 @@ const projects: Project[] = [
       "React (TypeScript) · Redux Toolkit · Python (Django) · PostgreSQL · WCAG 2.1",
     desc:
       "A full-stack knitwear store built for real-world use — featuring secure checkout, scalable order APIs, and a carefully crafted minimalist interface. Built with WCAG 2.1 / Section 508 compliance, clean architecture, and an intuitive shopping experience from browsing to checkout.",
-    img: "/assets/project_screens/tresse_demo_portfolio.mp4",
+    img: "/assets/project_screens/tresse_demo_portfolio.gif",
     live: "https://www.tressehandmade.com",
     flip: true,
   },
