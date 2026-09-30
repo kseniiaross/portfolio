@@ -128,8 +128,10 @@
   min-height: 500px;
   max-height: 600px;
   object-fit: cover;
-  border-radius: 16px;
-  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: none;
+  border: 0;
+  mask-image: radial-gradient(ellipse 85% 90% at 60% 40%, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 85% 90% at 60% 40%, black 40%, transparent 100%);
   display: block;
 }
 
